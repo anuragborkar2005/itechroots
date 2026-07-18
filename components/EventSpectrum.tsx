@@ -30,7 +30,7 @@ export default function EventSpectrum() {
 
   return (
     <section className="paper-section py-24 relative">
-      <div className="max-w-[1440px] mx-auto px-margin-desktop relative">
+      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop relative">
         <NodeDot className="-ml-[52px] mt-2" />
         
         <h2 className="font-headline-lg text-headline-lg text-root-ink mb-16">

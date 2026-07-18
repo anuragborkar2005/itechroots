@@ -12,7 +12,8 @@ interface EventItem {
   duration: string;
   venue: string;
   fee: number;
-  capacity: number | string;
+capacity?: number | string;
+participation: number | string;
   description: string;
   image: string;
 }
@@ -26,7 +27,7 @@ const eventsData: EventItem[] = [
     duration: "5 hrs",
     venue: "Department of IT",
     fee: 3000,
-    capacity: 50,
+    participation: 50,
     description: "Code Clash is an exciting coding battle designed to sharpen analytical thinking and programming skills.",
     image: "/code-clash_cchban.png",
   },
@@ -38,7 +39,7 @@ const eventsData: EventItem[] = [
     duration: "5 hrs",
     venue: "Department of IT",
     fee: 10999,
-    capacity: 100,
+    participation: 100,
     description: "Reel It is your stage to unleash creativity in the world of short-form videos.",
     image: "/reel-it_z3xywt.jpg",
   },
@@ -50,7 +51,7 @@ const eventsData: EventItem[] = [
     duration: "5 hrs",
     venue: "Remote",
     fee: 3000,
-    capacity: 200,
+    participation: 200,
     description: "Gear up for an adrenaline-packed battle in the Free Fire Showdown...",
     image: "/free-fire.jpg",
   },
@@ -62,7 +63,7 @@ const eventsData: EventItem[] = [
     duration: "12 hrs",
     venue: "Online",
     fee: 60,
-    capacity: "Individual",
+    participation: "Individual",
     description: "Beginner-friendly online cyber investigation contest.",
     image: "/satyanveshi_nvcsza.jpg",
   },
@@ -74,7 +75,7 @@ const eventsData: EventItem[] = [
     duration: "3 to 4 hrs",
     venue: "Volleyball Ground",
     fee: 4000,
-    capacity: 400,
+    participation: 400,
     description: "Epic battle of teamwork and strategy.",
     image: "/tug-of-war_nj8q9e.jpg",
   },
@@ -86,7 +87,7 @@ const eventsData: EventItem[] = [
     duration: "10 hrs",
     venue: "IT Building",
     fee: 20000,
-    capacity: 100,
+    participation: 100,
     description: "Transform ideas into working prototypes leveraging AI.",
     image: "/hackathon_uvpzrg.jpg",
   },
@@ -98,7 +99,7 @@ const eventsData: EventItem[] = [
     duration: "5 hrs",
     venue: "Department of IT",
     fee: 800,
-    capacity: 60,
+    participation: 60,
     description: "Thrilling battle of wits and knowledge.",
     image: "/quize-mania_ok76mp.jpg",
   },
@@ -110,7 +111,7 @@ const eventsData: EventItem[] = [
     duration: "5 hrs",
     venue: "Department of IT",
     fee: 5000,
-    capacity: 60,
+    participation: 60,
     description: "Pitch your innovation at this platform for budding entrepreneurs.",
     image: "/start-up-saga_qljoby.jpg",
   },
@@ -122,7 +123,7 @@ const eventsData: EventItem[] = [
     duration: "5 hrs",
     venue: "Department of IT",
     fee: 1000,
-    capacity: 70,
+    participation: 70,
     description: "Unleash your imagination blending colors and ideas.",
     image: "/poster-design_e1v2wd.jpg",
   },
@@ -134,7 +135,7 @@ const eventsData: EventItem[] = [
     duration: "4 hrs",
     venue: "Department of IT",
     fee: 3000,
-    capacity: 60,
+    participation: 60,
     description: "Creative coding marathon for impactful projects.",
     image: "/vibe-coding_pkb7h5.jpg",
   },
@@ -146,7 +147,7 @@ const eventsData: EventItem[] = [
     duration: "5 hrs",
     venue: "Department of IT",
     fee: 1500,
-    capacity: 60,
+    participation: 60,
     description: "Strategize, Compete, and Conquer the Board!",
     image: "/chess_zkjobj.jpg",
   },
@@ -158,7 +159,7 @@ const eventsData: EventItem[] = [
     duration: "10 hrs",
     venue: "Remote",
     fee: 5000,
-    capacity: 200,
+    participation: 200,
     description: "Dominate the battlegrounds at the Campus Brawl.",
     image: "/Bgmi_y3txrf.jpg",
   },
@@ -170,7 +171,7 @@ const eventsData: EventItem[] = [
     duration: "10 hrs",
     venue: "Remote",
     fee: 4999,
-    capacity: 250,
+    participation: 250,
     description: "The ultimate gaming showdown arena.",
     image: "/valorant_brq4yb.jpg",
   },
@@ -182,7 +183,7 @@ const eventsData: EventItem[] = [
     duration: "5 hrs",
     venue: "Department of IT",
     fee: 3998,
-    capacity: 70,
+    participation: 70,
     description: "Step onto the virtual pitch.",
     image: "/fifa_igmu65.jpg",
   },
@@ -194,7 +195,7 @@ const eventsData: EventItem[] = [
     duration: "10 hrs",
     venue: "Basketball Ground",
     fee: 5000,
-    capacity: 500,
+    participation: 118,
     description: "Box Cricket Bash - Team Size: 7 players.",
     image: "/box-cricket_yhh6dn.jpg",
   },
@@ -206,7 +207,7 @@ const eventsData: EventItem[] = [
     duration: "5 hrs",
     venue: "Department of IT",
     fee: 800,
-    capacity: 50,
+    participation: 50,
     description: "Action-packed event with thrilling challenges.",
     image: "/beat-the-mark_yc9zs0.jpg",
   },
@@ -218,7 +219,7 @@ const eventsData: EventItem[] = [
     duration: "8 hrs",
     venue: "DMMC TURF",
     fee: 4000,
-    capacity: 600,
+    participation: 96,
     description: "Elite Cup - Team Size: 6 players + subs.",
     image: "/fustal_a6gi9k.jpg",
   },
@@ -230,7 +231,7 @@ const eventsData: EventItem[] = [
     duration: "5 hrs",
     venue: "Remote",
     fee: 1000,
-    capacity: 50,
+    participation: 50,
     description: "Capture the world through your lens.",
     image: "/photo-arena_cw4ltd.jpg",
   },
@@ -296,9 +297,9 @@ export default function EventArchiveSection() {
 
   return (
     <section id="events" className="paper-section py-24 border-t border-mist/20 relative scroll-mt-16">
-      <div className="max-w-[1440px] mx-auto px-margin-desktop relative">
+      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop relative">
         <NodeDot className="-ml-[52px] mt-2" />
-        
+
         <div className="flex flex-col xl:flex-row xl:items-end justify-between mb-12 gap-8">
           <div>
             <h2 className="font-headline-lg text-headline-lg text-root-ink mb-4">
@@ -381,6 +382,7 @@ export default function EventArchiveSection() {
                     fill
                     sizes="(max-w-768px) 100vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    priority={event.image === "/photo-arena_cw4ltd.jpg"}
                   />
                   <div className="absolute top-3 left-3">
                     <span
@@ -398,12 +400,12 @@ export default function EventArchiveSection() {
                     <h3 className="font-headline-md text-root-ink mb-2 group-hover:text-signal-green transition-colors duration-300">
                       {event.name}
                     </h3>
-                    
+
                     <p className="font-body-md text-root-ink/70 text-sm mb-6 min-h-[48px] line-clamp-3">
                       {event.description}
                     </p>
                   </div>
-                  
+
                   <div className="space-y-3 pt-6 border-t border-mist/10">
                     <div className="grid grid-cols-2 gap-4">
                       <div>
@@ -415,7 +417,7 @@ export default function EventArchiveSection() {
                         <p className="font-data-value text-[13px] text-root-ink mt-0.5">{event.duration}</p>
                       </div>
                     </div>
-                    
+
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <p className="font-data-label text-[10px] text-root-ink/40 uppercase tracking-wider font-semibold">Venue</p>
@@ -423,10 +425,10 @@ export default function EventArchiveSection() {
                       </div>
                       <div>
                         <p className="font-data-label text-[10px] text-root-ink/40 uppercase tracking-wider font-semibold">Participation</p>
-                        <p className="font-data-value text-[13px] text-root-ink mt-0.5">{event.capacity}</p>
+                        <p className="font-data-value text-[13px] text-root-ink mt-0.5">{event.participation}</p>
                       </div>
                     </div>
-                    
+
                     <div className="pt-2">
                       <p className="font-data-label text-[10px] text-root-ink/40 uppercase tracking-wider font-semibold">Registration Fee</p>
                       <p className="font-headline-md text-root-ink text-lg font-bold mt-0.5">

@@ -3,7 +3,7 @@ import NodeDot from "./NodeDot";
 export default function SponsorshipArchitecture() {
   return (
     <section id="tiers" className="dark-section py-32 overflow-hidden relative scroll-mt-16">
-      <div className="max-w-[1440px] mx-auto px-margin-desktop relative">
+      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop relative">
         <NodeDot className="-ml-[52px] mt-2" />
         
         <h2 className="font-headline-lg text-headline-lg text-white mb-20 text-center uppercase tracking-wider">

@@ -61,7 +61,7 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="paper-section py-24 scroll-mt-16 relative">
-      <div className="max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-16 relative">
+      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-16 relative">
         <NodeDot className="-ml-[52px] mt-2" />
         
         {/* Form */}

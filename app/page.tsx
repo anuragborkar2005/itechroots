@@ -3,9 +3,9 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import CommunitiesSection from "@/components/CommunitiesSection";
 import EventArchiveSection from "@/components/EventArchiveSection";
-import WhyPartnerSection from "@/components/WhyPartnerSection";
 import LegacySection from "@/components/LegacySection";
 import Footer from "@/components/Footer";
+import WhySponsorUsSection from "@/components/WhySponsorUs";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
         <CommunitiesSection />
         {/*<EventSpectrum />*/}
         <EventArchiveSection />
-        <WhyPartnerSection />
+        <WhySponsorUsSection />
         <LegacySection />
         {/*<SponsorshipArchitecture />
         <ContactSection />*/}

@@ -3,23 +3,23 @@ import NodeDot from "./NodeDot";
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden dark-section">
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-margin-desktop py-24">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-20 md:py-24">
         <NodeDot className="top-0 -mt-4" />
 
         <p className="font-data-label text-data-label text-signal-green mb-6 tracking-[0.2em] uppercase">
           Department of Information Technology · YCCE Nagpur
         </p>
 
-        <h1 className="font-display-lg text-display-lg md:text-[120px] mb-4 leading-none text-white select-none">
+        <h1 className="font-display-lg text-[clamp(40px,11vw,64px)] md:text-[120px] mb-4 leading-none text-white select-none">
           ITECHROOTS 16.0
         </h1>
 
-        <div className="flex flex-wrap items-center gap-4 mb-8">
-          <span className="font-headline-md text-headline-md text-signal-green">Innovation</span>
-          <div className="w-1.5 h-1.5 bg-signal-green rotate-45"></div>
-          <span className="font-headline-md text-headline-md text-signal-green">Collaboration</span>
-          <div className="w-1.5 h-1.5 bg-signal-green rotate-45"></div>
-          <span className="font-headline-md text-headline-md text-signal-green">Celebration</span>
+        <div className="flex flex-wrap items-center gap-3 md:gap-4 mb-8">
+          <span className="font-headline-md text-xl md:text-headline-md text-signal-green">Innovation</span>
+          <div className="w-1.5 h-1.5 bg-signal-green rotate-45 shrink-0"></div>
+          <span className="font-headline-md text-xl md:text-headline-md text-signal-green">Collaboration</span>
+          <div className="w-1.5 h-1.5 bg-signal-green rotate-45 shrink-0"></div>
+          <span className="font-headline-md text-xl md:text-headline-md text-signal-green">Celebration</span>
         </div>
 
         <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-12 leading-relaxed">
@@ -42,14 +42,13 @@ export default function HeroSection() {
           >
             Download Sponsor PDF
           </a>
-
         </div>
 
         {/* Stat Bar */}
         <div className="relative w-full">
-          <div className="absolute top-1/2 w-full h-[1px] bg-mist -translate-y-1/2"></div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter relative z-10">
-            <div className="flex items-center gap-4 bg-root-ink py-6 pr-6">
+          <div className="absolute top-1/2 w-full h-[1px] bg-mist -translate-y-1/2 hidden md:block"></div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-6 md:gap-gutter relative z-10">
+            <div className="flex items-center gap-4 bg-root-ink py-4 md:py-6 md:pr-6">
               <div className="w-4 h-4 bg-signal-green rotate-45 shrink-0 transition-transform hover:rotate-90 duration-300"></div>
               <div>
                 <p className="font-headline-md text-headline-md text-white font-bold">5000+</p>
@@ -57,7 +56,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 bg-root-ink py-6 px-6">
+            <div className="flex items-center gap-4 bg-root-ink py-4 md:py-6 md:px-6">
               <div className="w-4 h-4 bg-signal-green rotate-45 shrink-0 transition-transform hover:rotate-90 duration-300"></div>
               <div>
                 <p className="font-headline-md text-headline-md text-white font-bold">18+</p>
@@ -65,7 +64,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 bg-root-ink py-6 pl-6">
+            <div className="flex items-center gap-4 bg-root-ink py-4 md:py-6 md:pl-6">
               <div className="w-4 h-4 bg-signal-green rotate-45 shrink-0 transition-transform hover:rotate-90 duration-300"></div>
               <div>
                 <p className="font-headline-md text-headline-md text-white font-bold">Industry-Academia</p>
@@ -78,3 +77,4 @@ export default function HeroSection() {
     </section>
   );
 }
+

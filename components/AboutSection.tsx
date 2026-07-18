@@ -3,7 +3,7 @@ import NodeDot from "./NodeDot";
 export default function AboutSection() {
   return (
     <section id="about" className="paper-section py-24 relative scroll-mt-16">
-      <div className="max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter relative">
+      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter relative">
         <NodeDot className="-ml-[52px] mt-2" />
         
         <div className="md:col-span-8">

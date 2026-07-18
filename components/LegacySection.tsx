@@ -9,7 +9,7 @@ export default function LegacySection() {
 
   return (
     <section className="paper-section py-24 relative">
-      <div className="max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative">
+      <div className="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative">
         <NodeDot className="-ml-[52px] mt-2" />
 
         <div>
