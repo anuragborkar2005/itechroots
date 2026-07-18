@@ -75,7 +75,7 @@ const eventsData: EventItem[] = [
     duration: "3 to 4 hrs",
     venue: "Volleyball Ground",
     fee: 4000,
-    participation: 400,
+    participation: 50,
     description: "Epic battle of teamwork and strategy.",
     image: "/tug-of-war_nj8q9e.jpg",
   },

@@ -51,7 +51,7 @@ export default function HeroSection() {
             <div className="flex items-center gap-4 bg-root-ink py-4 md:py-6 md:pr-6">
               <div className="w-4 h-4 bg-signal-green rotate-45 shrink-0 transition-transform hover:rotate-90 duration-300"></div>
               <div>
-                <p className="font-headline-md text-headline-md text-white font-bold">5000+</p>
+                <p className="font-headline-md text-headline-md text-white font-bold">3000+</p>
                 <p className="font-data-label text-data-label text-on-surface-variant uppercase tracking-wider">Expected Footfall</p>
               </div>
             </div>
@@ -77,4 +77,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
