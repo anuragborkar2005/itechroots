@@ -35,10 +35,14 @@ export default function HeroSection() {
           </a>
           <a
             href="/sponsorship_overview.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block text-center border border-copper text-copper px-8 py-4 font-data-label text-data-label font-bold hover:bg-copper hover:text-white active:scale-98 transition-all duration-200"
           >
-            Download Sponsorship Kit
+            Download Sponsor PDF
           </a>
+
         </div>
 
         {/* Stat Bar */}
